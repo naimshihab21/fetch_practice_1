@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: hsl(219, 38%, 8%);
+  --body-color-alt: hsl(219, 32%, 12%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-color);
+  color: rgb(201, 201, 201);
+}
+
+.container {
+  padding: 2rem;
+}
+
+.showText {
+  text-align: center;
+}
+
+.main_button {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 3px 15px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  background-color: hsl(219, 33%, 25%);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+/* ===== list User ===== */
+.list_users {
+  justify-content: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, clamp(250px, 10vw, 10px));
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  margin-bottom: 1rem;
+  background-color: var(--body-color-alt);
+  padding: 1rem;
+  border-radius: .2rem;
+  box-shadow: 0 0 10px 16px rgba(255, 255, 255, 0.2);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ===== Post Data ===== */
+.getAPI_Data {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 10vw, 400px), 1fr));
+  gap: 20px;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.main_postData {
+  background-color: var(--body-color-alt);
+  padding: 1rem;
+  border-top: 4px solid hsl(219, 33%, 25%);
+  border-radius: .2rem;
+  cursor: default;
+  transition: .3s all;
+}
+
+.main_postData:hover {
+  background-color: hsl(219, 32%, 15%);
+  transform: scale(.99);
+}
+
+/* ===== Form ===== */
+.addPost {
+  background-color: hsl(219, 33%, 25%);
+  backdrop-filter: blur(10px);
+  border-radius: .2rem;
+  box-shadow: 0 10px 10px 2px rgba(240, 240, 240, 0.1);
+  padding: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+input[type="text"] {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea,
+input[type="text"] {
+  padding: 3px 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: .12rem;
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: .5rem;
+}
+
+.form_submit {
+  display: grid;
+}
+
+.input_submit {
+  padding: .5rem 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  cursor: pointer;
+  border: none;
+  transition: .3s all;
+  border-radius: .12rem;
+}
+
+.input_submit:active {
+  transform: scale(0.98);
+}

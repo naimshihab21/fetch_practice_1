@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Fetch API</title>
+</head>
+<body>
+  <div class="container">
+    <div class="main_button">
+      <button id="getText">Get Text</button>
+      <button id="getUsers">Get JSON</button>
+      <button id="getPosts">Get API Data</button>
+    </div>
+    <!-- Show Get Text -->
+    <p id="showText" class="showText"></p>
+
+    <!-- Show Get JSON -->
+    <h2></h2>
+    <div class="list_users"></div>
+    
+    <!-- Show Get Data API -->
+    <h2></h2>
+    <div class="getAPI_Data"></div>
+
+    <!-- Form -->
+    <form id="addPost" class="addPost">
+      <div class="form_title">
+        <input type="text" id="title" placeholder="Title">
+      </div>
+      <div class="form_body">
+        <textarea id="body" placeholder="body"></textarea>
+      </div>
+      <div class="form_submit">
+        <input type="submit" value="Submit" class="input_submit">
+      </div>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
